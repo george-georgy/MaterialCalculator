@@ -1,7 +1,7 @@
 package com.george_georgy.materialcalcuator.domain
 
-import assertk.assertThat
-import assertk.assertions.isEqualTo
+
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 
