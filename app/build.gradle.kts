@@ -12,7 +12,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -66,4 +66,15 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Unit Tests
+    testImplementation ("androidx.test:core:1.5.0")
+    testImplementation ("junit:junit:4.13.2")
+    testImplementation ("com.google.truth:truth:1.1.3")
+
+    testImplementation ("com.willowtreeapps.assertk:assertk:0.26.1")
+
+    testImplementation ("org.junit.jupiter:junit-jupiter-api:5.9.3")
+    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.9.3")
+    testImplementation ("org.junit.jupiter:junit-jupiter-params:5.9.3")
 }
